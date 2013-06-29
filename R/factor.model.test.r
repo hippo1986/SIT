@@ -107,8 +107,9 @@ dev.off()
 		for(i in ls(data)) data[[i]] = adjustOHLC(data[[i]], use.Adjusted=T)	
 	#save(data, file='data.Rdata')
 	
-	#load(file='data.fund.Rdata')
-	#load(file='data.Rdata')
+	load(file='data.fund.Rdata')
+	load(file='data.Rdata')
+	sapply(data.fund, function(x) ncol(x))
 	
 			
 	# combine fundamental and pricing data

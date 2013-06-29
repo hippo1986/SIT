@@ -259,15 +259,15 @@ meom.strategy.test <- function()
 			)
 
 
-png(filename = 'plot1.png', width = 600, height = 500, units = 'px', pointsize = 12, bg = 'white')										
+png(filename = 'plot1.png', width = 1200, height = 1000, units = 'px', pointsize = 12, bg = 'white')										
 	plotbt.custom.report.part1(models)
 dev.off()	
 
-png(filename = 'plot2.png', width = 1200, height = 800, units = 'px', pointsize = 12, bg = 'white')	
+png(filename = 'plot2.png', width = 2400, height = 1600, units = 'px', pointsize = 12, bg = 'white')	
 	plotbt.custom.report.part2(models)
 dev.off()	
 
-png(filename = 'plot3.png', width = 600, height = 500, units = 'px', pointsize = 12, bg = 'white')	
+png(filename = 'plot3.png', width = 1200, height = 1000, units = 'px', pointsize = 12, bg = 'white')	
 	plotbt.custom.report.part3(models$meom.top2.rank2, trade.summary=T)		
 dev.off()	
 			 
